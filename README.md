@@ -1,6 +1,6 @@
 # Skill Assisessment-Handwritten Digit Recognition using MLP
 
-## Aim:
+## AIM:
 
        To Recognize the Handwritten Digits using Multilayer perceptron.
        
@@ -9,7 +9,7 @@
 Hardware – PCs
 Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
 
-## Theory:
+## THEORY:
 
 Handwriting recognition is the ability of a computer to receive and interpret intelligible handwritten input from sources such as paper documents, photographs, touch-screens, and other devices. There are many techniques to that have been developed to recognize the handwriting. One of them is Handwritten Digit Recognition. In this project, we would be using Machine Learning classifier Multi-layer Perceptron Neural Network.
 
@@ -19,26 +19,21 @@ MLP classifier is a very powerful neural network model that enables the learning
 
 It can be seen that the machine learning model can recognize the hand written digits. Though the accuracy is about 83% but still it can be increased by using Convolution Neural Network or Support Vector Machine classifier of machine learning with proper tuning.
 
-ALGORITHM:
-Step 1:
-Import the necessary libraries of python.
+## ALGORITHM:
 
-Step 2:
-In the end_to_end function, first calculate the similarity between the inputs and the peaks. Then, to find w used the equation Aw = Y in matrix form. Each row of A (shape: (4, 2)) consists of index [0]:
+Step 1:Import the necessary libraries of python.
 
-Step 3:
-Similarity of point with peak 1 index [1]: similarity of point with peak 2 index[2]: Bias input (1) Y: Output associated with the input (shape: (4, )) W is calculated using the same equation we use to solve linear regression using a closed solution (normal equation).
+Step 2:In the end_to_end function, first calculate the similarity between the inputs and the peaks. Then, to find w used the equation Aw = Y in matrix form. Each row of A (shape: (4, 2)) consists of index [0]:
 
-Step 4:
-This part is the same as using a neural network architecture of 2-2-1, 2 node input (x1, x2) (input layer) 2 node (each for one peak) (hidden layer) 1 node output (output layer).
+Step 3:Similarity of point with peak 1 index [1]: similarity of point with peak 2 index[2]: Bias input (1) Y: Output associated with the input (shape: (4, )) W is calculated using the same equation we use to solve linear regression using a closed solution (normal equation).
 
-Step 5:
-To find the weights for the edges to the 1-output unit. Weights associated would be: edge joining 1st node (peak1 output) to the output node edge joining 2nd node (peak2 output) to the output node bias edge.
+Step 4:This part is the same as using a neural network architecture of 2-2-1, 2 node input (x1, x2) (input layer) 2 node (each for one peak) (hidden layer) 1 node output (output layer).
 
-Step 6:
-End the program.
+Step 5:To find the weights for the edges to the 1-output unit. Weights associated would be: edge joining 1st node (peak1 output) to the output node edge joining 2nd node (peak2 output) to the output node bias edge.
 
-## Program:
+Step 6:End the program.
+
+## PROGRAM:
 ```
 ### Developed by : M.Pavithra
 ### Reg.No : 212222100032
@@ -156,7 +151,7 @@ def test_prediction(index, W1, b1, W2, b2):
    get_accuracy(dev_predictions, Y_dev)   
    ```
 
-## Output :
+## OUTPUT:
 
 ## Y_TRAIN:
 
@@ -198,6 +193,6 @@ def test_prediction(index, W1, b1, W2, b2):
 
 ![image](https://github.com/22008686/Ex-6-Handwritten-Digit-Recognition-using-MLP/assets/118916413/8c8f0d3f-5e71-4f49-ab6f-e0333221d1a5)
 
-## Result:
+## RESULT:
 
 Thus, the program to recognize the handwritten digits using the multi-layer perceptron (MLP) is developed and executted successfully.
